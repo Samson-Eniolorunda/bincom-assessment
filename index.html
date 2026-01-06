@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================================================
+      BASIC PAGE SETUP
+      - Character encoding + responsive viewport for mobile devices
+    ========================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (shows on browser tab + search results title) -->
+    <title>Samson Eniolorunda | Profile</title>
+
+    <!-- =========================================================
+      EXTERNAL LIBRARIES / STYLES
+      - Font Awesome: icon library used for social icons in footer
+      - Local stylesheet: main custom styles for this website
+    ========================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =========================================================
+      NAVIGATION BAR
+      - Sticky top menu for section navigation (single-page layout)
+      - Includes hamburger toggle for mobile screens
+    ========================================================== -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Brand / logo text -->
+            <h1 class="logo">
+                <a href="#" aria-label="Go to homepage">Samson.Dev</a>
+            </h1>
+
+            <!-- Mobile hamburger button (controlled by JavaScript) -->
+            <div class="menu-toggle" id="mobile-menu" aria-label="Open menu" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Nav links jump to sections using IDs -->
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =========================================================
+      HERO SECTION
+      - Intro banner: name, role, short tagline, and CTA button
+    ========================================================== -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hello, I'm Samson Eniolorunda</h2>
+                <p>NYSC Corps Member | Front-End Developer</p>
+                <p class="small-text">Bridging the gap between Operations and Technology.</p>
+
+                <!-- CTA button scrolls to contact section -->
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================
+      ABOUT SECTION
+      - Short professional summary
+    ========================================================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Summary</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a hardworking and tech-savvy NYSC Corps Member serving in Lagos, seeking a role as a Logistics Trainee.
+                        I have a unique background: I run a small logistics business (cooking gas supply), and I am also a trained
+                        Front-End Developer.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        This combination means I understand the physical work of moving goods, but I also have the advanced technical
+                        skills to handle data, automate reports, and use software better than the average trainee. I am humble, ready
+                        to learn, and looking for a company where I can use my physical and mental energy to support the team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+      EXPERIENCE SECTION
+      - Work history shown in "job-card" blocks
+      - bg-light adds white background contrast
+    ========================================================== -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+
+            <!-- Experience Card 1 -->
+            <div class="job-card">
+                <h3>Active Corps Member</h3>
+                <p class="company">National Youth Service Corps (NYSC) | Lagos | June 2025 - Present</p>
+                <ul>
+                    <li><strong>Status:</strong> Active Corps member with about 5 months remaining in the service year.</li>
+                    <li>
+                        <strong>Goal:</strong> Seeking a PPA to apply my organizational and technical skills in a
+                        professional logistics environment.
+                    </li>
+                    <li><strong>Availability:</strong> I am available to resume immediately.</li>
+                </ul>
+            </div>
+
+            <!-- Experience Card 2 -->
+            <div class="job-card">
+                <h3>Business Owner & Manager</h3>
+                <p class="company">BTB Cooking Gas Solutions | Lagos | 2022 - Present</p>
+                <ul>
+                    <li>
+                        <strong>Logistics & Supply:</strong> I manage the ordering and transportation of gas cylinders from
+                        suppliers to my facility.
+                    </li>
+                    <li>
+                        <strong>Delivery Coordination:</strong> I organize delivery schedules to ensure customers get their orders
+                        on time, handling the last-mile logistics personally.
+                    </li>
+                    <li>
+                        <strong>Inventory Control:</strong> I replaced manual paper logs with digital records to ensure every
+                        cylinder and naira is accounted for.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Experience Card 3 -->
+            <div class="job-card">
+                <h3>Volunteer Technical Support</h3>
+                <p class="company">Krystal Klean Solution (UK) | Remote</p>
+                <ul>
+                    <li><strong>The Problem:</strong> The company had a messy manual booking process.</li>
+                    <li>
+                        <strong>My Solution:</strong> I used my coding skills (Google Apps Script) to build a tool that
+                        automatically tracked bookings and generated invoices.
+                    </li>
+                    <li>
+                        <strong>Relevance:</strong> I can bring this same problem-solving mindset to help organize logs
+                        and fleet data.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+      EDUCATION SECTION
+      - Education history shown in the same "job-card" style
+    ========================================================== -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+
+            <div class="job-card">
+                <h3>Web Development Bootcamp</h3>
+                <p class="company">Product Hub Africa | 2025</p>
+                <p>Completed intensive training in Front-End technologies and Version Control (Git/GitHub).</p>
+            </div>
+
+            <div class="job-card">
+                <h3>Bachelor of Arts (B.A.) - History & International Studies</h3>
+                <p class="company">Adekunle Ajasin University, Akungba-Akoko, Nigeria | 2019 - 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+      SKILLS SECTION
+      - Skill badges shown in a flexible grid layout
+    ========================================================== -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical & Professional Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-item">HTML5 & CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Bootstrap</div>
+                <div class="skill-item">Microsoft Office</div>
+                <div class="skill-item">Google Workspace</div>
+                <div class="skill-item">Stock Management</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+      GALLERY SECTION
+      - Contains at least 5 images (as required)
+      - Images open in a lightbox when clicked (handled by JS)
+    ========================================================== -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">My Life in Pictures</h2>
+            <p class="text-center">A glimpse into my NYSC service, work, and friends.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/img/img1.jpg" alt="Professional Headshot"></div>
+                <div class="gallery-item"><img src="assets/img/img2.jpg" alt="Me at NYSC Camp"></div>
+                <div class="gallery-item"><img src="assets/img/img3.jpg" alt="Coding Setup"></div>
+                <div class="gallery-item"><img src="assets/img/img4.jpg" alt="My Business"></div>
+                <div class="gallery-item"><img src="assets/img/img5.jpg" alt="With Friends"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+      LIGHTBOX (MODAL IMAGE VIEWER)
+      - Hidden by default
+      - When an image is clicked, JS:
+        1) shows this modal
+        2) loads the clicked image into #lightboxImg
+        3) locks page scroll for a clean viewing experience
+    ========================================================== -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <!-- Close button (X) -->
+        <span class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</span>
+
+        <!-- Image preview area (JS updates src + alt) -->
+        <img class="lightbox-img" id="lightboxImg" alt="">
+    </div>
+
+    <!-- =========================================================
+      FOOTER / CONTACT SECTION
+      - Social links displayed as Font Awesome icons
+      - Uses aria-label + title for accessibility and clarity
+    ========================================================== -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I am available for immediate resumption.</p>
+
+            <div class="social-links" aria-label="Social links">
+                <!-- Email -->
+                <a href="mailto:eniolorundasamson@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <!-- Portfolio -->
+                <a href="https://samsoneniolorunda.vercel.app" target="_blank" rel="noopener" aria-label="Portfolio" 
+                    title="Portfolio">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/samson-eniolorunda" target="_blank" rel="noopener" aria-label="LinkedIn" 
+                    title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+
+            <p class="copyright">&copy; 2026 Samson Eniolorunda.</p>
+        </div>
+    </footer>
+
+    <!-- =========================================================
+      MAIN JAVASCRIPT FILE
+      - Handles:
+        1) Mobile nav toggle (hamburger menu)
+        2) Lightbox open/close for gallery images
+    ========================================================== -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
